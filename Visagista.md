@@ -1,5 +1,27 @@
 # 👓 Visagista AI - Sistema de Recomendación de Gafas
 
+## 🚀 Aplicación en Producción
+
+**[🔗 Ver Aplicación en Vivo](https://visagista-ai-sistema-de-recomendaci.vercel.app/)**
+
+### Tecnologías de Despliegue
+
+**Frontend:**
+- **Vercel** - CDN global con edge computing
+- React + Vite optimizado para producción
+- Deploy automático desde GitHub
+
+**Backend:**
+- **Render** - Servidor Flask en Ohio (US East)
+- Gunicorn con timeout extendido (600s) para procesamiento de IA
+- PostgreSQL 16 integrado
+
+**Servicios de IA y Almacenamiento:**
+- **Google Gemini 2.5 Flash** - Análisis de rostro y generación de imágenes
+- **Cloudinary** - CDN para imágenes y selfies
+
+---
+
 ## VISAGISTA
 
 Es un especialista en analizar el rostro y diseñar la imagen personal (accesorios en este caso) para resaltar la belleza y la personalidad de cada individuo.
