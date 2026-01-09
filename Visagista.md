@@ -1,5 +1,11 @@
 # 👓 Visagista AI - Sistema de Recomendación de Gafas
 
+## 🎨 Ejemplo de Resultado
+
+![Resultado completo de Visagista AI](./images/visagista-IA.webp)
+
+---
+
 ## 🚀 Aplicación en Producción
 
 **[🔗 Ver Aplicación en Vivo](https://visagista-ai-sistema-de-recomendaci.vercel.app/)**
