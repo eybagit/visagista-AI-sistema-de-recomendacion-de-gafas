@@ -22,14 +22,10 @@ from .checkpoint_cache import (
 from google import genai
 from google.genai import types
 
-# Configurar cliente con Vertex AI
-# Requiere: GOOGLE_CLOUD_PROJECT, GOOGLE_CLOUD_LOCATION en .env
-# IMPORTANTE: Los modelos gemini-2.5-flash-* están en location 'global'
-client = genai.Client(
-    vertexai=True,
-    project=os.getenv('GOOGLE_CLOUD_PROJECT'),  # Requerido en .env
-    location=os.getenv('GOOGLE_CLOUD_LOCATION', 'global')
-)
+# Configurar cliente con API Key (más simple que Vertex AI)
+# Solo requiere: GOOGLE_API_KEY en .env
+# Los modelos gemini-2.5-flash-* funcionan igual con API Key
+client = genai.Client(api_key=os.getenv('GOOGLE_API_KEY'))
 
 # Modelos a utilizar
 IMAGE_MODEL = "gemini-2.5-flash-image"
